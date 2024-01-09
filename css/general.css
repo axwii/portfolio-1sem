@@ -255,7 +255,7 @@ h1 .text-light {
   width: 50px;
   object-fit: cover;
   margin-bottom: -9px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 #portrait-img:hover {
   transform: scale(1.2);
@@ -268,6 +268,15 @@ h1 .text-light {
 #portraitBlack {
   height: 400px;
   margin-left: 20%;
+  transform: box-shadow 0.3s;
+}
+#portraitBlack img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+#portraitBlack:hover {
+  box-shadow: 0 0 20px rgba(69, 69, 69, 0.5);
 }
 
 .paragraf {
