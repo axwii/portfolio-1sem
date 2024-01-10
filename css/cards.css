@@ -82,11 +82,6 @@
   z-index: 2;
 }
 
-section,
-#cards {
-  border-top: #323232 solid 1.5px;
-  margin-top: 10px;
-}
 #cards {
   padding-top: 10px;
 }

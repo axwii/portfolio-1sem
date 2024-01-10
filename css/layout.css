@@ -82,8 +82,9 @@
 
   #logo img {
     object-fit: contain;
-    height: 100%;
+    height: 50px;
     width: auto;
+    margin-top: 10px;
   }
 
   #nav_list {
@@ -209,7 +210,7 @@
 
   #logo img {
     object-fit: contain;
-    height: 70px;
+    height: 50px;
     width: auto;
   }
 }

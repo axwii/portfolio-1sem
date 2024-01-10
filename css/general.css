@@ -400,3 +400,10 @@ section .faq {
   color: #fff;
   cursor: pointer;
 }
+
+
+section,
+#cards {
+  border-top: #323232 solid 1.5px;
+  margin-top: 10px;
+}
