@@ -419,6 +419,11 @@ section .faq {
   color: #9677ca;
 }
 
+.work-link{
+  text-decoration: none;
+}
+
+
 #experience ul {
   list-style: none;
   display: flex;
