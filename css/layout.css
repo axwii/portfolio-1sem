@@ -79,6 +79,9 @@
     float: left;
     margin: 0 0 0 0;
   }
+  #logo:hover {
+    background: radial-gradient(circle, rgba(178, 178, 178, 0.306) 0%, rgba(233,148,148,0) 50%);
+  }
 
   #logo img {
     object-fit: contain;
