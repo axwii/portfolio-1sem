@@ -98,10 +98,6 @@ h1 .text-light {
 
 /* Line menu */
 @media screen and (min-width: 850px) {
-  header {
-    overflow: hidden;
-  }
-
   #logo {
     float: left;
     margin: 0 0 0 0;
@@ -216,7 +212,6 @@ h1 .text-light {
     top: 60px;
     left: 0;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
@@ -633,15 +628,56 @@ section .faq {
   cursor: pointer;
 }
 
-
 /* dropdown menu */
-@media(min-width: 850px){
-  #all-themes-nav{
+@media (min-width: 850px) {
+  #all-themes-nav {
     display: none;
   }
 }
-@media(max-width: 850px){
-  #temaer{
+@media (max-width: 850px) {
+  #theme-dropdown {
     display: none;
   }
+}
+
+.dropbtn {
+  font-family: "CabinetGrotesk-Regular";
+  color: #eee;
+  background-color: #1b1b1b;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover {
+  color: #b2b2b2;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 71px;
+  z-index: 1;
+  background-color: #1b1b1bd5;
+}
+
+.dropdown-content a {
+  color: #eee;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: #b2b2b2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

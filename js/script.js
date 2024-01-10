@@ -15,6 +15,21 @@ links.forEach((link) => {
   });
 });
 
+// Dropdown menu
+function handleDropdownVisibility() {
+  const dropdown = document.getElementById("theme-dropdown");
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (dropdown && screenWidth < 850) {
+    dropdown.remove();
+  }
+}
+
+// Call the function on page load and whenever the window is resized
+window.addEventListener("load", handleDropdownVisibility);
+window.addEventListener("resize", handleDropdownVisibility);
+
+
 // Image popup
 function openImage(image) {
   const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
