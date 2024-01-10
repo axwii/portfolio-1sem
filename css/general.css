@@ -293,6 +293,10 @@ h1 .text-light {
 .paragraf h2 {
   font-size: 25px;
 }
+.paragraf span {
+  font-size: 20px;
+  color: #b2b2b2;
+}
 
 #email {
   color: #b2b2b2;
@@ -337,7 +341,7 @@ section .paragraf {
     margin-top: 10px;
     padding-top: 30px;
   }
-  h1{
+  h1 {
     left: 0;
     width: 100%;
   }
@@ -347,9 +351,9 @@ section .paragraf {
   body > main:nth-child(2) > section:nth-child(3) {
     border: none;
   }
-  #experience-p{
+  #experience-p {
     display: none;
-  }  
+  }
 }
 
 .hero-img {
@@ -543,29 +547,87 @@ section .faq {
   margin-bottom: 40px;
 }
 
-#social-icons{
+#social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
-#social-icons img{
+#social-icons img {
   height: 30px;
   width: auto;
   object-fit: contain;
 }
-#social-icons a{
+#social-icons a {
   margin: 0 5px;
 }
-#social-icons img:hover{
+#social-icons img:hover {
   box-shadow: 0 0 20px rgba(232, 232, 232, 0.5);
   border-radius: 100%;
 }
-#footer-name{
+#footer-name {
   font-family: "CabinetGrotesk-Light";
   font-size: 20px;
   color: #b2b2b2;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+#theme-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.theme-image {
+  width: calc(50% - 5px);
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.theme-image:hover {
+  box-shadow: 0 0 20px rgba(69, 69, 69, 0.5);
+}
+.theme-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.theme-image img:hover {
+  opacity: 1;
+}
+@media (max-width: 850px) {
+  .theme-image {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+#image-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  text-align: center;
+}
+
+#popup-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin-top: 10%;
+}
+
+#close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
 }

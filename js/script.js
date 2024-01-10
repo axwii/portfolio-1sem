@@ -14,3 +14,21 @@ links.forEach((link) => {
     nav.classList.remove("active");
   });
 });
+
+// Image popup
+function openImage(image) {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+  if (screenWidth >= 850) {
+  const popup = document.getElementById("image-popup");
+  const popupImage = document.getElementById("popup-image");
+
+  popupImage.src = image.src;
+  popup.style.display = "block";
+  }
+}
+
+function closeImage() {
+  const popup = document.getElementById("image-popup");
+  popup.style.display = "none";
+}

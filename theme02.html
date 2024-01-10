@@ -66,6 +66,47 @@
         <article class="paragraf">
           <h2>Studiestartsprøven</h2>
           <p>Her er nogle billeder af opgaven, som jeg løste i Tema 2.</p>
+          <div id="theme-images">
+            <div class="theme-image">
+              <img
+                src="img/tema02/tema02-layoutdiagram.webp"
+                alt="Assignment image"
+                onclick="openImage(this)"
+              />
+            </div>
+            <div class="theme-image">
+              <img
+                src="img/tema02/tema02-wireframe.webp"
+                alt="Assignment image"
+                onclick="openImage(this)"
+              />
+            </div>
+            <div class="theme-image">
+              <img
+                src="img/tema02/tema02-opg-1.webp"
+                alt="Assignment image"
+                onclick="openImage(this)"
+              />
+            </div>
+            <div class="theme-image">
+              <img
+                src="img/tema02/tema02-opg-2.webp"
+                alt="Assignment image"
+                onclick="openImage(this)"
+              />
+            </div>
+            <div class="theme-image">
+              <img
+                src="img/tema02/tema02-opg-3.webp"
+                alt="Assignment image"
+                onclick="openImage(this)"
+              />
+            </div>
+          </div>
+          <div id="image-popup">
+            <img id="popup-image" alt="Popup image" />
+            <span id="close-button" onclick="closeImage()">&times;</span>
+          </div>
         </article>
       </section>
       <section>
@@ -73,16 +114,22 @@
         <article class="paragraf">
           <h2>Se opgaven her</h2>
           <a class="work-link" href="https://axe1.dk/1sem/T2/website/index.html"
-            ><p id="link">Studiestartsprøven</p></a
+            ><span id="link">Studiestartsprøven</span></a
           >
         </article>
       </section>
     </main>
     <footer>
       <div id="social-icons">
-        <a href="mailto:axel@wiingaard.net"><img src="img/icons/email-icon.svg" alt="Mail" /></a>
-        <a href="https://github.com/axwii"><img src="img/icons/github-icon.svg" alt="Github" /></a>
-        <a href="https://www.linkedin.com/in/axel-wiingaard/"><img src="img/icons/linkedin-icon.svg" alt="LinkedIn" /></a>
+        <a href="mailto:axel@wiingaard.net"
+          ><img src="img/icons/email-icon.svg" alt="Mail"
+        /></a>
+        <a href="https://github.com/axwii"
+          ><img src="img/icons/github-icon.svg" alt="Github"
+        /></a>
+        <a href="https://www.linkedin.com/in/axel-wiingaard/"
+          ><img src="img/icons/linkedin-icon.svg" alt="LinkedIn"
+        /></a>
       </div>
       <div id="footer-name">
         <p>© Axel Wiingaard 2024</p>
