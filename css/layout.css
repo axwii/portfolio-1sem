@@ -41,12 +41,11 @@
   color: #b2b2b2;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   .card {
     width: 100%;
   }
 }
-/* test */
 
 #cards:hover > .card > .card-border {
     opacity: 1;

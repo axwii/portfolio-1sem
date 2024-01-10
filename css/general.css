@@ -325,6 +325,32 @@ section .paragraf {
   left: 20%;
   width: 80%;
 }
+@media (max-width: 850px) {
+  section .paragraf {
+    left: 0;
+    width: 100%;
+  }
+  section p:nth-child(1) {
+    display: none;
+  }
+  section {
+    margin-top: 10px;
+    padding-top: 30px;
+  }
+  h1{
+    left: 0;
+    width: 100%;
+  }
+  #hero > span:nth-child(1) {
+    display: none;
+  }
+  body > main:nth-child(2) > section:nth-child(3) {
+    border: none;
+  }
+  #experience-p{
+    display: none;
+  }  
+}
 
 .hero-img {
   margin-top: 10px;
