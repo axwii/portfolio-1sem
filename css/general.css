@@ -268,7 +268,6 @@ h1 .text-light {
 #portraitBlack {
   height: 400px;
   margin-left: 20%;
-  transform: box-shadow 0.3s;
 }
 #portraitBlack img {
   height: 100%;
@@ -337,6 +336,50 @@ section .paragraf {
 #hero > span:nth-child(1) {
   position: absolute;
   bottom: 10px;
+}
+
+#hero-about > p:nth-child(1) {
+  bottom: -10px;
+  top: auto;
+  position: absolute;
+}
+#hero-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#hero-about h1 {
+  text-align: left;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+  #hero-about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero-about h1 {
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 850px) {
+  #hero-about h1 {
+    margin-bottom: -16px;
+  }
+  #hero-about {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  #hero-about > p:nth-child(1) {
+    bottom: -21px;
+  }
 }
 
 summary ul {
@@ -419,10 +462,9 @@ section .faq {
   color: #9677ca;
 }
 
-.work-link{
+.work-link {
   text-decoration: none;
 }
-
 
 #experience ul {
   list-style: none;
