@@ -542,3 +542,30 @@ section .faq {
   text-align: center;
   margin-bottom: 40px;
 }
+
+#social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+#social-icons img{
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+#social-icons a{
+  margin: 0 5px;
+}
+#social-icons img:hover{
+  box-shadow: 0 0 20px rgba(232, 232, 232, 0.5);
+  border-radius: 100%;
+}
+#footer-name{
+  font-family: "CabinetGrotesk-Light";
+  font-size: 20px;
+  color: #b2b2b2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
