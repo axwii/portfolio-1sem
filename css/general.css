@@ -296,6 +296,7 @@ h1 .text-light {
 .paragraf span {
   font-size: 20px;
   color: #b2b2b2;
+  padding-top: 10px;
 }
 
 #email {
