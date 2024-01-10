@@ -632,3 +632,16 @@ section .faq {
   color: #fff;
   cursor: pointer;
 }
+
+
+/* dropdown menu */
+@media(min-width: 850px){
+  #all-themes-nav{
+    display: none;
+  }
+}
+@media(max-width: 850px){
+  #temaer{
+    display: none;
+  }
+}
